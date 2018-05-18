@@ -1,0 +1,434 @@
+/*header*/
+
+#tophead {
+    background-color: #6ab43e!important;
+    background-image: linear-gradient(-75deg,#29aedf 10%,#6ab43e 80%)!important;
+    padding:15px
+}
+
+.rightemailtop a,
+#tophead .addrestop p{ 
+    color:rgba(255, 255, 255, .63922);
+    font-weight:100;
+    font-size:15px;
+    position:relative; 
+    margin:auto
+}
+
+.rightemailtop a svg {
+    float:left;
+    margin:0px 10px 0px -40px;
+    left:0;
+    position:absolute;
+}
+
+#tophead .addrestop p svg{
+    float:left;
+    margin:0px 10px 0px 0px;
+}
+
+.rightemailtop a {
+    position:relative;
+}
+
+.rightemailtop a svg path,
+#tophead .addrestop p svg path{  
+    fill:rgba(255, 255, 255, .52941)
+}
+
+/*menu*/
+
+#menus { 
+    padding:15px
+}
+
+.menulist ul{
+    padding:0px;
+    list-style:none;
+    margin:auto;
+}
+
+.menulist ul li{
+    display:inline-block;
+}
+
+.menuli {
+    position:relative;
+    top:8px
+}
+
+.calltoday {
+    margin-right:120px;
+}
+
+.calltoday  a{
+    border:solid 1px #47b0ba;
+    padding:12px 25px;
+    color:#45afbc;
+    font-weight:bold;
+}
+
+.calltoday a:hover {
+    text-decoration:none;
+}
+
+.calltoday a:hover svg path{ 
+    fill:#f1feff; 
+    -webkit-transition:.5s; 
+    transition:.5s;
+}
+
+.calltoday a svg{
+    float:left;
+    margin-right:10px;
+}
+
+.calltoday a svg path{
+    fill:#5eacb5
+}
+
+.menutext {
+    position: relative;
+    left: -70px;
+    float: left;
+    background: none !important; 
+    color: #786809;
+}
+
+.menuli div:nth-child(2) { 
+    background-color: #3faedf !important; 
+}
+
+.menuli div:nth-child(4),
+.menuli div:nth-child(3) { 
+    background-color: #58b275 !important; 
+}
+
+.menuli div {
+    width: 40px;
+    height: 5px;
+    background-color: #494949;
+    margin: 5px 0 0px;
+    border-radius:2px
+}
+
+/*slider*/
+
+#slider-home {
+    height:500px !important;
+}
+
+#slider-home .container{
+    padding:70px 430px 0px 30px;
+}
+
+#slider-home .container  h1 {
+    font-size: 48px;
+    background-image: linear-gradient(-75deg,#3faedf 50%,#69b43e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    font-weight:bold;
+    letter-spacing:1px;
+    margin-bottom:20px
+}
+
+#slider-home .container p{
+    font-size: 18px;  
+    width:550px;
+    color:#535353;
+    font-weight:100;
+    margin-bottom:30px;
+}
+
+#slider-home .container ul{
+    padding:0px;
+    list-style:none;
+}
+
+#slider-home .container ul li{
+    display:inline-block;
+}
+
+#slider-home .container ul li.cont a{
+    padding:15px 30px;
+    background-color:#54b285; 
+    border-radius:30px;
+    color:#fff;
+    margin-right:20px;
+}
+
+#slider-home .info a{
+    background-color:#54b285;
+    padding:22px 15px 12px;
+    border-radius:100%;
+    position:relative;
+    top:8px
+}
+
+#slider-home .info a svg path{
+    fill:#fff !important;
+    opacity:111 !important
+}
+
+/*why massage*/
+
+#whymassage .leftwhy{
+    background:#333 url(/img/aboutleft.jpg)no-repeat center ;
+    background-position:center;
+    background-size:cover
+}
+
+#whymassage .rightwhy{
+    background-color: #6ab43e!important;
+    background-image: linear-gradient(-75deg,#29aedf 10%,#7da267 80%)!important;
+    padding: 55px 70px 50px 50px;  
+}
+
+#whymassage .rightwhy h1{
+    font-size:45px;
+    font-weight:300;
+    color:#fff;
+    letter-spacing:1px;
+    margin-bottom:30px;
+}
+
+body #whymassage .rightwhy p{
+    font-size:16px;
+    font-weight:100 !important; 
+    color:#e4f9ff; 
+    letter-spacing:.8px;  
+}
+
+body #whymassage .rightwhy p a{ 
+    color:#ffffff;  
+    text-decoration:underline;
+    font-weight:bold;
+}
+
+/*services*/
+
+#ourservices {
+    background:#ddd url(/img/servbg.jpg)no-repeat bottom right;
+    background-size:cover;
+    padding:50px 0px;
+}
+
+#ourservices .headtits{ 
+    margin:20px 0px 0px;
+    background-image: linear-gradient(-75deg,#3faedf 50%,#69b43e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    font-size:56px;
+    font-weight:300;
+    letter-spacing:2px;
+}
+
+#ourservices .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #44ae9e;
+}
+
+#ourservices .swiper-slide {
+    background:none !important;
+}
+
+body #ourservices .swiper-slide .services-details h3{
+    font-size:23px !important;
+    color:#6d6d6d;
+    margin-bottom:18px;
+}
+
+body #ourservices .swiper-slide .services-details p{
+    font-size:16px !important;
+    color:#6d6d6d;
+    font-weight:100; 
+}
+
+#ourservices .swiper-slide .services-details ul{
+    padding:0px;
+    list-style:none;
+}
+
+#ourservices .swiper-slide .services-details ul li{
+    display:inline-block;
+}
+
+#ourservices .swiper-slide .services-details ul li.callusbook a{
+    border:solid 1px #44ae9e;
+    padding:10px 20px;
+    display:inline-block;
+    color:#44ae9e
+}
+
+#ourservices .swiper-slide .services-details ul li.callusbook a svg{
+    float:left;
+    margin-right:10px;
+}
+
+#ourservices .swiper-slide .services-details ul li.callusbook a svg path{
+    fill:#44ae9e
+}
+
+#ourservices .infoserv a{ 
+    padding:18px 10px 10px;
+    background-color:#44ae9e;
+    position:relative;
+    top:4px
+}
+
+#ourservices .swiper-container .swiper-wrapper{
+    height:550px
+}
+
+#ourservices .infoserv a svg path{
+    fill:#fff
+}
+
+/*quote*/
+
+#quote {
+    background:#44ae9e url(/img/quotebg.jpg)no-repeat center fixed;
+    background-size:cover;
+    padding:150px
+}
+
+#quote h1{ 
+    font-size:26px;
+    color:#fff;
+    line-height:1.6em;
+    text-align:center;
+    padding:0px 50px;
+    letter-spacing:1px;
+}
+
+/*therapist*/
+
+#meetourtherapist {
+    padding:70px 0px;
+}
+
+#meetourtherapist .detteam img{
+    max-width:100%;
+}
+
+#meetourtherapist .detteam .detbio{
+    background-color:#5fb359;
+    text-align:center;
+    padding:20px 10px
+}
+
+#meetourtherapist .detteam .detbio h3{
+    font-size:20px;
+    color:#fff;
+    letter-spacing:1px;
+}
+
+#meetourtherapist .detteam .detbio span{
+    font-size:13px;
+    color:#befbb9;
+    letter-spacing:1px;
+}
+
+#meetourtherapist .detteam .detbio .btnher{
+    border:solid 2px #fff;
+    display:block;
+    margin:20px 20px 0px;
+    padding:10px;
+    color:#fff;
+}
+
+.titletherpst h1 {
+    text-align:center;
+    margin:0px 0px 90px;
+     background-image: linear-gradient(-75deg,#3faedf 30%,#69b43e 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+}
+
+
+
+/*footer*/
+
+
+#footer {
+   padding:50px 0px;
+   background:#f6f6f6;   
+}
+#footer h1{
+   font-size:30px;
+   margin-bottom:30px;
+   background-image: linear-gradient(-75deg,#3faedf 50%,#69b43e 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+}
+#footer p{
+   font-size:16px;
+   font-weight:100;
+   padding-right:60px;
+   line-height:1.8em
+}
+#footer p a{
+   color:#5fb358
+}
+#footer .navigtn ul {
+    padding:0px;
+}
+#footer .navigtn li{
+    list-style:none;
+    margin:10px 0px;
+}
+#footer .navigtn li a{
+    color:#636363;
+    font-size:15px
+}
+#footer .contst .col-3 svg{
+    background-color: #6ab43e!important;
+    background-image: linear-gradient(-75deg,#29aedf 10%,#6ab43e 80%)!important;
+    padding:10px;
+    border-radius:30px;
+    width:45px !important;
+    height:45px !important;
+}
+
+#footer .contst .row {
+    margin:20px 0px;
+}
+#footer .contst .emailfots a{ 
+    position:relative;
+    top:5px;
+    word-break:break-all
+}
+#footer .conts ul{
+    padding:0px;
+    list-style:none;
+}
+#footer .conts li {
+    position:relative;
+    top:8px
+}
+#footer .contst .col-9 {
+    padding:0px ;
+}
+#footer .contst a{
+    color:#676767;
+}
+
+#copyright {
+    background:#717171;
+    padding:30px;
+}
+
+#copyright p{
+    margin:auto;
+    color:#fff;
+    font-size:14px;
+}
+#copyright p a{
+    margin:auto;
+    color:#58b275;
+    font-size:14px;
+}
