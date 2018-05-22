@@ -10,31 +10,9 @@ $('document').ready(function(){
     loop: true,
     transitionIn: 'comingIn',
     transitionInOverlay: 'fadeIn'
-  });  
+  });   
 
-  $("#neuro,#medical,#mayofas,#sports,#tissue,#bio").iziModal({
-    icon: 'icon-event icon-btn',
-    width: "1028px", 
-    history: false,
-    fullscreen: true,
-    headerColor: '#45a991',
-    group: 'group1',
-    loop: true,
-    transitionIn: 'comingIn',
-    transitionInOverlay: 'fadeIn'
-  });  
-
-  $("#therap1,#therap2,#therap3,#therap4,#therap5,#therap6,#therap7,#therap8").iziModal({
-    icon: 'icon-event icon-btn',
-    width: "1028px", 
-    history: false,
-    fullscreen: true,
-    headerColor: '#45a991',
-    group: 'group1',
-    loop: true,
-    transitionIn: 'comingIn',
-    transitionInOverlay: 'fadeIn'
-  });
+  
 
 });
 

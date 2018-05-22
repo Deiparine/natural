@@ -15,7 +15,7 @@
   -webkit-transform:translate3d(-2380px,0,0);
   transform:translate3d(-310px,0,0);
   height:100%;
-  background:#41aeca url(/img/side_bg.jpg) no-repeat top 80px right!important;
+  background:#162f25 url(/img/side_bg2.png) no-repeat top 80px right!important;
 }
 
 .sidebar.open {
@@ -142,13 +142,13 @@
 }
 
 .sidebar-header { 
-  padding:40px 44px 0px;
-  text-align:left;
+  padding:30px 44px 0px;
+  text-align:center;
 }
 
-.sidebar-header  a{ 
+.sidebar-header  a{
   font-size:24px;
-  color:#abe7ef;
+  color: #3c7d66;
 }
 
 .sidebar-header h1 { 
@@ -159,17 +159,18 @@
 }
 
 .sidebar-header img {
-  width:90%;
+  width:70%;
+  margin:auto;
 }
 
 .sidebar-nav {
-  padding:40px 30px 10px;
+  padding:30px 30px 10px;
 }
 
 .sidebar-nav li {
   display:block !important;
   width:100%;
-  border-bottom:solid 1px rgba(173, 173, 173, .12941);
+  border-bottom:solid 1px rgb(23, 51, 40);
 }
 
 .sidebar-nav li:nth-child(1) svg{
@@ -210,7 +211,7 @@
 }
 
 .sidebar-nav li a:hover {
-  color:#6fde83; 
+  color:#2d7559; 
   padding-left:15px;
   -webkit-transition:all ease-in-out 300ms;
   transition:all ease-in-out 300ms;
@@ -223,13 +224,14 @@
 
 .contsside a {
   display:block;
-  color:#b3ffdb;
+  color:#5b7f72;
   margin-top:10px;
   font-size:15px; 
 }
 
 .contsside a:hover { 
-  color:#cab71a;  
+  color:#fff;  
+  text-decoration:none;
 }
 
 .contsside a svg {
@@ -240,12 +242,12 @@
 .copyside {
   padding:0px 38px;
   font-size:14px;
-  color:#9ef3b6; 
+  color:#3c7964; 
   font-weight:100;
 }
 
 .contsside a svg path {
-  fill:#dfffe6 !important;
+  fill:#479879 !important;
 }
 
 .sidebar-nav .loginreg {

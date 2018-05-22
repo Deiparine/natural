@@ -2,7 +2,7 @@
 
 #tophead {
     background-color: #6ab43e!important;
-    background-image: linear-gradient(-75deg,#29aedf 10%,#6ab43e 80%)!important;
+    background-image: linear-gradient(-75deg,#5b7d6e 10%,#194a35 80%)!important;
     padding:15px
 }
 
@@ -39,11 +39,40 @@
 /*menu*/
 
 #menus { 
-    padding:15px
+    padding:15px; 
+    -webkit-transition:all ease-in-out 600ms;
+  transition:all ease-in-out 600ms;
+}
+
+#menus.fixed {
+  position:fixed;
+  width:100%;
+  display:block;
+  top:0;
+  z-index:11;
+  -webkit-box-shadow:0px 5px 10px rgba(0, 0, 0, .07843);
+          box-shadow:0px 5px 10px rgba(0, 0, 0, .07843);
+  background-color:#ffffff;
+  -webkit-transition:all ease-in-out 600ms;
+  transition:all ease-in-out 600ms;
+  -webkit-transform:translate3d(0px,0px,0px);
+
+}
+
+#menus.fixed .logotext a img{
+  width:60px !important;
+  -webkit-transition:all ease-in-out 600ms;
+  transition:all ease-in-out 600ms;
+}
+
+#menus.fixed  .menulist ul {
+    padding: 0px 0px 0px;
+    list-style: none;
+    margin: auto;
 }
 
 .menulist ul{
-    padding:0px;
+    padding:20px 0px 0px;
     list-style:none;
     margin:auto;
 }
@@ -62,9 +91,9 @@
 }
 
 .calltoday  a{
-    border:solid 1px #47b0ba;
+    border:solid 1px #2a5a46;
     padding:12px 25px;
-    color:#45afbc;
+    color:#295946;
     font-weight:bold;
 }
 
@@ -73,7 +102,7 @@
 }
 
 .calltoday a:hover svg path{ 
-    fill:#f1feff; 
+    fill:#fff; 
     -webkit-transition:.5s; 
     transition:.5s;
 }
@@ -84,7 +113,7 @@
 }
 
 .calltoday a svg path{
-    fill:#5eacb5
+    fill:#295946
 }
 
 .menutext {
@@ -96,12 +125,16 @@
 }
 
 .menuli div:nth-child(2) { 
-    background-color: #3faedf !important; 
+    background-color: #619680 !important; 
 }
 
 .menuli div:nth-child(4),
 .menuli div:nth-child(3) { 
-    background-color: #58b275 !important; 
+    background-color: #5b7d6d !important; 
+}
+
+.menutext {
+    color:#386552
 }
 
 .menuli div {
@@ -124,7 +157,7 @@
 
 #slider-home .container  h1 {
     font-size: 48px;
-    background-image: linear-gradient(-75deg,#3faedf 50%,#69b43e 100%);
+    background-image: linear-gradient(-75deg,#7b7b7b 50%,#416b59 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
@@ -152,18 +185,22 @@
 
 #slider-home .container ul li.cont a{
     padding:15px 30px;
-    background-color:#54b285; 
+    background-color:#295845; 
     border-radius:30px;
     color:#fff;
     margin-right:20px;
 }
 
+#slider-home .container ul li.cont a:hover{
+    text-decoration:none;
+}
+
 #slider-home .info a{
-    background-color:#54b285;
+    background-color:#416b5a;
     padding:22px 15px 12px;
     border-radius:100%;
     position:relative;
-    top:8px
+    top:8px;
 }
 
 #slider-home .info a svg path{
@@ -181,7 +218,7 @@
 
 #whymassage .rightwhy{
     background-color: #6ab43e!important;
-    background-image: linear-gradient(-75deg,#29aedf 10%,#7da267 80%)!important;
+    background-image: linear-gradient(-75deg,#525f59 10%,#2a5845 80%)!important;
     padding: 55px 70px 50px 50px;  
 }
 
@@ -193,10 +230,18 @@
     margin-bottom:30px;
 }
 
+#ourservices .service-img-inner img {
+    margin-bottom:40px;
+}
+
+#index .row {
+    margin:auto;
+}
+
 body #whymassage .rightwhy p{
     font-size:16px;
     font-weight:100 !important; 
-    color:#e4f9ff; 
+    color:#c8ccca; 
     letter-spacing:.8px;  
 }
 
@@ -208,6 +253,21 @@ body #whymassage .rightwhy p a{
 
 /*services*/
 
+#ourservices .swiper-button-next,
+#ourservices .swiper-button-prev  {
+    background:none !important
+}
+
+#ourservices .swiper-button-next svg{
+   position:relative;
+   right:-5px
+}
+
+#ourservices .swiper-button-prev svg{
+   position:relative;
+   left:-20px
+}
+
 #ourservices {
     background:#ddd url(/img/servbg.jpg)no-repeat bottom right;
     background-size:cover;
@@ -216,7 +276,7 @@ body #whymassage .rightwhy p a{
 
 #ourservices .headtits{ 
     margin:20px 0px 0px;
-    background-image: linear-gradient(-75deg,#3faedf 50%,#69b43e 100%);
+    background-image: linear-gradient(-75deg,#2f7f5f 30%,#2b5846 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
@@ -227,7 +287,7 @@ body #whymassage .rightwhy p a{
 
 #ourservices .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #44ae9e;
+    background: #2b5846;
 }
 
 #ourservices .swiper-slide {
@@ -241,7 +301,7 @@ body #ourservices .swiper-slide .services-details h3{
 }
 
 body #ourservices .swiper-slide .services-details p{
-    font-size:16px !important;
+    font-size:14px !important;
     color:#6d6d6d;
     font-weight:100; 
 }
@@ -256,10 +316,10 @@ body #ourservices .swiper-slide .services-details p{
 }
 
 #ourservices .swiper-slide .services-details ul li.callusbook a{
-    border:solid 1px #44ae9e;
+    border:solid 1px #2b5846;
     padding:10px 20px;
     display:inline-block;
-    color:#44ae9e
+    color:#2b5846
 }
 
 #ourservices .swiper-slide .services-details ul li.callusbook a svg{
@@ -268,12 +328,12 @@ body #ourservices .swiper-slide .services-details p{
 }
 
 #ourservices .swiper-slide .services-details ul li.callusbook a svg path{
-    fill:#44ae9e
+    fill:#2b5846
 }
 
 #ourservices .infoserv a{ 
     padding:18px 10px 10px;
-    background-color:#44ae9e;
+    background-color:#2b5846;
     position:relative;
     top:4px
 }
@@ -314,9 +374,10 @@ body #ourservices .swiper-slide .services-details p{
 }
 
 #meetourtherapist .detteam .detbio{
-    background-color:#5fb359;
+    background-color:#2b5846;
+    background-image: linear-gradient(185deg,#2f7f5f -10%,#2b5846 100%);
     text-align:center;
-    padding:20px 10px
+    padding:20px 10px;
 }
 
 #meetourtherapist .detteam .detbio h3{
@@ -327,11 +388,11 @@ body #ourservices .swiper-slide .services-details p{
 
 #meetourtherapist .detteam .detbio span{
     font-size:13px;
-    color:#befbb9;
+    color:#e4e6e6;
     letter-spacing:1px;
 }
 
-#meetourtherapist .detteam .detbio .btnher{
+#meetourtherapist .detteam .detbio .btnher a{
     border:solid 2px #fff;
     display:block;
     margin:20px 20px 0px;
@@ -339,55 +400,69 @@ body #ourservices .swiper-slide .services-details p{
     color:#fff;
 }
 
+#meetourtherapist .detteam .detbio .btnher a:hover{
+    background:#fff;
+    color:#333;
+    text-decoration:none;
+}
+
+.therapists.swiper-container  {
+    height:600px
+}
+
 .titletherpst h1 {
     text-align:center;
-    margin:0px 0px 90px;
-     background-image: linear-gradient(-75deg,#3faedf 30%,#69b43e 80%);
+    margin:0px 0px 10px;
+     background-image: linear-gradient(-75deg,#2f7f5f 30%,#2b5846 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
 }
 
-
-
 /*footer*/
-
 
 #footer {
    padding:50px 0px;
    background:#f6f6f6;   
 }
+
 #footer h1{
    font-size:30px;
    margin-bottom:30px;
-   background-image: linear-gradient(-75deg,#3faedf 50%,#69b43e 80%);
+   background-image: linear-gradient(-75deg,#2f7f5f 30%,#2b5846 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
 }
+
 #footer p{
    font-size:16px;
    font-weight:100;
    padding-right:60px;
    line-height:1.8em
 }
+
 #footer p a{
    color:#5fb358
 }
+
 #footer .navigtn ul {
     padding:0px;
 }
+
 #footer .navigtn li{
     list-style:none;
     margin:10px 0px;
 }
+
 #footer .navigtn li a{
     color:#636363;
     font-size:15px
 }
+
 #footer .contst .col-3 svg{
     background-color: #6ab43e!important;
-    background-image: linear-gradient(-75deg,#29aedf 10%,#6ab43e 80%)!important;
+    background-image: linear-gradient(-75deg,#2f7f5f 30%,#2b5846 80%);
     padding:10px;
     border-radius:30px;
     width:45px !important;
@@ -397,28 +472,33 @@ body #ourservices .swiper-slide .services-details p{
 #footer .contst .row {
     margin:20px 0px;
 }
+
 #footer .contst .emailfots a{ 
     position:relative;
     top:5px;
     word-break:break-all
 }
+
 #footer .conts ul{
     padding:0px;
     list-style:none;
 }
+
 #footer .conts li {
     position:relative;
     top:8px
 }
+
 #footer .contst .col-9 {
     padding:0px ;
 }
+
 #footer .contst a{
     color:#676767;
 }
 
 #copyright {
-    background:#717171;
+    background:#2e5d4a;
     padding:30px;
 }
 
@@ -427,8 +507,366 @@ body #ourservices .swiper-slide .services-details p{
     color:#fff;
     font-size:14px;
 }
+
 #copyright p a{
     margin:auto;
-    color:#58b275;
+    color: #1cb376;
     font-size:14px;
+}
+
+.moreinfoabout {
+    border:solid 2px #fff;;
+    padding:10px 35px 15px;
+    color:#fff;
+    position:relative !important;
+    display:inline-block;
+    margin:20px 0px;
+}
+
+.moreinfoabout:hover svg path,
+.moreinfoabout:hover {
+    background-color:#fff;
+    color:#333;
+    fill:#333;
+    text-decoration:none;
+}
+
+#meetourtherapist .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #2c6952;
+}
+
+.moreinfoabout svg{     
+    position:relative;
+    left:0px;
+    margin-right:0px !important; 
+    top:5px;
+}
+
+.moreinfoabout svg path{     
+    fill:#fff;
+}
+
+.icon-close {
+    display: block;
+    position:fixed;
+    background:none;
+    top:0;
+    z-index:1;
+    right:10px;
+    border:none;
+    padding:15px;
+}
+
+.icon-close svg{
+    width:40px !important;
+    height:40px !important; 
+}
+
+.icon-close svg path{ 
+    fill:#297d5c;
+}
+
+.modalstyle {
+    padding:50px;
+}
+
+#contact {
+    padding:60px 0px;
+    background:#f3f3f3 url(/img/cont_bg.png)
+}
+
+#contact h1{
+    color:#33846b;
+    font-weight:300;
+    letter-spacing:2px;
+    margin-bottom:30px;
+}
+
+#contact .rightcontdets .row .col-sm-12 ,
+#contact .rightcontdets .row .col-sm-6{
+    margin:auto !important;
+    padding:10px !important; 
+}
+
+#contact .rightcontdets .row textarea {
+    background:transparent;
+    -webkit-box-shadow:0px 0px 0px;
+            box-shadow:0px 0px 0px;
+    border:none;
+    border-bottom:solid 1px #8a8a8a;
+    width:100%;
+    padding:15px 0px
+}
+
+#contact .btnform .submit{
+    background:transparent;
+    padding:15px 30px;
+    border:solid 2px
+}
+
+#contact ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #9a9a9a;
+}
+
+#contact ::-moz-placeholder { /* Firefox 19+ */
+  color: #9a9a9a;
+}
+
+#contact :-ms-input-placeholder { /* IE 10+ */
+  color: #9a9a9a;
+}
+
+#contact :-moz-placeholder { /* Firefox 18- */
+  color: #9a9a9a;
+}
+
+#contact .rightcontdets .row .col-sm-6 input {
+    background:transparent;
+    -webkit-box-shadow:0px 0px 0px;
+            box-shadow:0px 0px 0px;
+    border:none;
+    border-bottom:solid 1px;
+    width:100%;
+    padding:15px 0px
+}
+
+#contact .rightcontdets input{
+    color:#000;
+    font-weight:300;
+    letter-spacing:1px;
+    font-size:15px;
+}
+
+/*general*/
+
+#slidegen {
+    height:270px !important
+}
+
+#slidegen .sildertxt{
+    padding:90px 0px;
+}
+
+#slidegen .sildertxt a{
+    color:#58bb93;
+}
+
+#slidegen .sildertxt span{
+    color:#929292;
+}
+
+#slidegen .sildertxt .othrpagesttle{
+    font-size:55px;
+    color:#fff
+}
+
+.contentgeneral {
+    padding:40px 0px !important
+}
+
+.contentgeneral img{
+    width:100%;
+    margin:30px 0px;
+}
+
+.contentgeneral h1{
+    width:100%;
+    margin:20px 0px;
+    font-size:30px
+}
+
+.contentgeneral p{
+    line-height:2em;
+    font-size:15px
+}
+
+/*pricing page*/
+
+.pricing .prclst{
+    margin-bottom:30px;
+}
+
+.pricing .divprc{
+    background:#f9f9f9;
+    padding:0px 0px 10px;
+}
+
+.pricing .divprc h1{
+    background:#4ca584;  
+    font-size:22px;
+    padding:10px 20px;
+    color:#fff;
+    font-weight:300;
+}
+
+.pricing .divprc {
+    -webkit-box-shadow:0px 30px 20px -20px #ddd;
+            box-shadow:0px 30px 20px -20px #ddd;
+    -webkit-transition:.6s;
+    transition:.6s;
+}
+
+.pricing .divprc:hover  {
+    -webkit-box-shadow:0px 20px 20px -20px #ddd;
+            box-shadow:0px 20px 20px -20px #ddd;
+    -webkit-transition:.6s;
+    transition:.6s;
+}
+
+.pricing .divprc ul li{
+    font-size:16px;
+    color:#828282
+}
+
+.headapp {
+    text-align:center;
+    background:#4a7261;
+    padding:2px;
+    margin:auto;
+    color:#fff; 
+    margin-bottom:40px;
+}
+
+.leftcontapp  {
+    padding:20px 30px;
+}
+
+.leftcontapp p {
+    font-size:18px;
+    color:#969696;
+    font-weight:300;
+}
+
+.leftcontapp p a {
+    font-size:18px;
+    color:#49705e; 
+}
+
+.rightcontapp .imgrightfloat{
+    margin:0;
+    -webkit-box-shadow:0px 20px 20px -20px;
+            box-shadow:0px 20px 20px -20px;
+    border:solid #f9f9f9;
+}
+
+.leftcontapp strong {
+    color:#333;
+    font-weight:bold;
+}
+
+.leftcontapp span {
+    font-size:24px;
+    display:block;
+    margin:30px 0px;
+    color:#8e4e4e
+}
+
+.schedcol { 
+    padding:30px; 
+}
+
+.schedcol svg { 
+    width:120px;
+    height:auto;
+    margin:auto;
+    display:block;
+    margin:30px 0 40px;
+}
+
+.schedcol svg path{ 
+    fill:#2c5b48
+}
+
+.schedcol svg path{ 
+    fill:#499c7b
+}
+
+.schedcol h4{ 
+    color:#499c7b;
+    margin-bottom:20px;
+}
+
+.schedcol p{ 
+   font-size:16px;
+}
+
+.detserlist {
+    padding:15px 10px; 
+    margin:15px 0px;
+    background:#f9f9f9;
+    -webkit-box-shadow:0px 20px 20px -20px rgba(0, 0, 0, .23137);
+            box-shadow:0px 20px 20px -20px rgba(0, 0, 0, .23137);
+    -webkit-transition:all ease-in-out 600ms;
+    -moz-transition:all ease-in-out 600ms;
+    -o-transition:all ease-in-out 600ms;
+    -transition:all ease-in-out 600ms;
+}
+
+.detserlist:hover { 
+    background:#2f7f5f;
+    background-image: linear-gradient(-75deg,#2f7f5f 30%,#2b5846 80%);
+    -webkit-transition:all ease-in-out 600ms;
+    -moz-transition:all ease-in-out 600ms;
+    -o-transition:all ease-in-out 600ms;
+    -transition:all ease-in-out 600ms;
+}
+
+.detserlist:hover p {
+    color:rgba(255, 255, 255, .78039);
+    font-weight:100;
+}
+
+.detserlist:hover a{ 
+    color:#fff
+}
+
+.detserlist .thumb{ 
+    display:inline-block;
+    float:left;
+    margin-right:10px;
+    position:relative;
+}
+
+.detserlist .thumb img  { 
+    margin:0px 0px 100% auto;
+    width:90px
+}
+
+.detserlist p  { 
+   color:#2f2f2f; 
+   font-size:15px;
+}
+
+.detserlist a  { 
+   color:#2f5d4a;
+   font-weight:bold;
+   margin-bottom:10px;
+   display:block;
+   font-size:20px
+}
+
+.listservbtm .rightservbtm  {
+    padding:20px 30px
+}
+
+.listservbtm .rightservbtm h1{ 
+    color:#2f5d4a;
+}
+
+.btncall a {
+    display:inline-block;
+    border:solid 2px #2f5d4a;;
+    padding:14px 30px;
+    color:#353535;
+    text-decoration:none;
+}
+
+.btncall a svg{
+    float:left;
+    margin-right:10px
+}
+.detservmodal h4 {
+    margin-bottom:30px;
+    color:#2f7c5b
 }
