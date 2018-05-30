@@ -24,7 +24,7 @@ $('document').ready(function(){
     transitionInOverlay: 'fadeIn'
   });  
 
-  $("#therap1,#therap2,#therap3,#therap4,#therap5,#therap6,#therap7,#therap8").iziModal({
+  $("#therap1,#therap2,#therap3,#therap4,#therap5,#therap6,#therap7,#therap8,#can,#ill,#late").iziModal({
     icon: 'icon-event icon-btn',
     width: "1028px", 
     history: false,
@@ -36,6 +36,37 @@ $('document').ready(function(){
     transitionInOverlay: 'fadeIn'
   });
 
+
+    // Modal
+    $("#modal").iziModal({
+      title: "About Us",
+      subtitle: 'Welcome to Natural Earth Healing Center',
+      headerColor: '#5b7d6e',
+      width: '1000px',
+      top: '50px',
+      icon: 'icon-event icon-btn',
+      fullscreen: true,
+      iframe: true,
+      iframeHeight: 800,
+      // Provide the IFRAME url below
+      iframeURL: '/about'
+    });
+    $(document).on('click', '.trigger-modal', function(event) {
+      event.preventDefault();
+      $('#modal').iziModal('open');
+    });
+
+});
+
+
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
 });
 
 
@@ -72,6 +103,11 @@ $(function(){
           slidesPerGroup: 2,
         },
         480: {
+          slidesPerView:1,
+          spaceBetween: 30,
+          slidesPerGroup: 1,
+        },
+        400: {
           slidesPerView:1,
           spaceBetween: 30,
           slidesPerGroup: 1,

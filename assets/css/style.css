@@ -573,7 +573,7 @@ body #ourservices .swiper-slide .services-details p{
 
 #contact {
     padding:60px 0px;
-    background:#f3f3f3 url(/img/cont_bg.png)
+    background:#f3f3f3 url(/img/cont_bg.png)no-repeat center/cover
 }
 
 #contact h1{
@@ -594,7 +594,7 @@ body #ourservices .swiper-slide .services-details p{
     -webkit-box-shadow:0px 0px 0px;
             box-shadow:0px 0px 0px;
     border:none;
-    border-bottom:solid 1px #8a8a8a;
+    border-bottom:solid 1px #000000;
     width:100%;
     padding:15px 0px
 }
@@ -866,7 +866,523 @@ body #ourservices .swiper-slide .services-details p{
     float:left;
     margin-right:10px
 }
+
 .detservmodal h4 {
     margin-bottom:30px;
     color:#2f7c5b
+}
+
+.moreabout { 
+    display:inline-block;
+    padding:17px 30px;
+    background:#719e8b;
+    position:relative; 
+    margin-left:15px;
+    color:#fff;
+}
+
+.moreabout:hover { 
+    text-decoration:none;
+    color:#ddd;
+}
+
+.moreabout svg{ 
+    float:left;
+    margin-right:10px;
+}
+
+.moreabout svg path{ 
+    fill:#fff;
+}
+
+/*pricing*/
+
+#index .pricing {
+    padding:40px 0px;
+    background:#eaf9f3
+}
+
+.pricing h2 {
+    margin: 30px 0px 40px;
+    background-image: linear-gradient(-75deg,#2f7f5f 30%,#2b5846 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    font-size: 56px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+/*scheduling*/
+
+#schedule {
+    background:#ddd url("/img/sched_bg.jpg")no-repeat left center;
+    padding:60px 0px 70px;
+    background-size:cover;
+}
+
+#schedule .ico-list a{ 
+    display:inline-block;
+    height:150px;
+    padding:30px;
+    float:left;
+    margin-right:20px;
+    text-align:center;
+    color:#2d7157;
+    font-weight:bold;
+}
+
+#schedule h2{ 
+    font-size:48px;
+    color:#2d7256;
+    margin-bottom:40px;
+    font-weight:300;
+    letter-spacing:2px;
+}
+
+#schedule p{ 
+    font-size:16px;
+    color:#636363;
+    margin-bottom:20px;
+}
+
+#schedule p a{ 
+    font-size:16px;
+    color:#2d7155;
+    margin-bottom:20px;
+    font-weight:bold;
+    text-decoration:underline;
+}
+
+#schedule  .hrsdv {
+    padding:15px 20px 5px;    
+    border:solid 1px #219e67;
+    display:inline-block;
+    margin-bottom:30px;
+}
+
+#schedule  .qute {
+    text-align:center;
+    color:#2d7057;
+    font-size:20px;
+    font-weight:bold;
+}
+
+#schedule span { 
+    font-size:18px;
+    color:#585858;
+    margin-bottom:30px;
+    display:block;
+}
+
+#schedule .ico-list a svg{
+    width:60px;
+    display:block;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+#schedule .ico-list a svg path{
+   fill:#2d7157
+}
+
+@media(max-width:1024px) {
+    #slider-home .container h1 {
+        font-size: 38px; 
+    }
+    #slider-home {
+        height: 450px !important;
+    }
+    #whymassage .rightwhy h1 {
+        font-size: 38px; 
+    }
+    body #ourservices .swiper-slide .services-details h3 {
+        font-size: 20px !important; 
+        margin-bottom: 18px;
+    } 
+    .services-container { 
+        height:100%
+    }
+    #ourservices .headtits {
+        margin: 20px 0px 30px;
+    }
+    .services-details {
+        height:200px; 
+        position:relative;
+    }
+    .services-details ul{
+        bottom:-15px;
+        position:absolute;
+        left:0;
+        right:0;
+    }
+    #quote {
+        background: #44ae9e url(/img/quotebg.jpg)no-repeat center fixed;
+        background-size: cover;
+        padding: 100px;
+    }
+    #schedule {
+        background-position:-300px;
+        text-align:center;
+        background-color:#f3f3f3;
+    }
+    #schedule .rightsched {
+        min-width:100%;
+    }
+    .ico-list {
+        display:inline-block; 
+        text-align:center;
+    }
+    .therapists.swiper-container {
+        height: 100%;
+        margin:40px 0px;
+    }
+    #meetourtherapist .swiper-slide {
+        height:100%;
+        position:relative;
+    }
+    .detbio {
+        height:200px;
+        position:relative; 
+    }
+    #meetourtherapist .detteam .detbio .btnher a {
+        position:absolute;
+        bottom:30px;
+        display:block; 
+        left:0;
+        right:0;
+    }
+    body #whymassage .rightwhy p {
+        font-size: 15px;
+        font-weight: 100 !important;
+        color: #c8ccca;
+        letter-spacing: .8px;
+    }
+    #quote h1 {
+        font-size: 20px;
+        color: #fff;
+        line-height: 1.6em;
+        text-align: center;
+        padding: 0px 50px;
+        letter-spacing: 1px;
+    }
+}
+
+@media(max-width:768px) {
+    .rightemailtop a, #tophead .addrestop p { 
+        font-size: 14px; 
+    }
+    #slider-home .container {
+        padding: 70px 130px 0px 60px;
+    }
+    .leftwhy {
+        display:none;
+    }
+    .rightwhy   {
+        min-width:100%;
+    }
+    #quote h1 { 
+        padding: 0px 10px; 
+    }
+    .pricing .prclst {
+        min-width:50%;
+    }
+    #schedule {
+        background-position: -600px; 
+    }
+    #meetourtherapist .detteam .detbio h3 {
+        font-size: 18px; 
+    }
+    #contact .rightcontdets {
+        min-width:80%; 
+        display:block; 
+        margin:auto;
+    }
+    #contact {
+        background-position:-300px
+    }
+    #contact h1 {
+        text-align:center;
+    }
+    #footer .aboutfot {
+        min-width:70% !important
+    }
+    #footer .navigtn {
+        min-width:30% !important;
+        padding-left:40px;
+    }
+    #footer .contst {
+        min-width:100%;
+    }
+    body #footer .contst .row .col-3{
+        max-width:80px !important; 
+    }
+    #footer .contst h1 {
+        font-size: 30px;
+        margin-bottom: 40px; 
+    }
+    #copyright .col {
+        min-width:100%;
+        text-align:center !important;
+    }
+}
+
+@media(max-width:640px) {
+    #slider-home .container {
+        padding: 70px 130px 0px 60px;
+    }
+    #menus.fixed { 
+        z-index: 99999; 
+    }
+    .container {
+        max-width: 100%;
+    }
+    .calltoday {
+        margin-right: 90px;
+    }
+    .logotext {
+        position:absolute;
+    }
+    .logotext img {
+        width:70px;
+    }
+    #menus .col-7 {
+        min-width:80%;
+        margin:auto 0 auto auto
+    }
+    .menulist ul {
+        padding: 0px 0px 10px;
+        list-style: none;
+        margin: auto;
+    }
+    #slider-home:before {
+        content:"";
+        display:block;
+        position:absolute;
+        height:100%;
+        width:100%;
+        background:rgba(196, 196, 196, .61176);
+        z-index:1;
+    }
+    .vegas-wrapper {
+        z-index:999 !important
+    }
+    #quote {
+        background: #44ae9e url(/img/quotebg.jpg)no-repeat center fixed;
+        background-size: cover;
+        padding: 100px 30px;
+    }
+    #contact .rightcontdets {
+        min-width: 100%; 
+    }
+    #contact ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: #333;
+    }
+
+    #contact ::-moz-placeholder { /* Firefox 19+ */
+      color: #333;
+    }
+
+    #contact :-ms-input-placeholder { /* IE 10+ */
+      color: #333;
+    }
+
+    #contact :-moz-placeholder { /* Firefox 18- */
+      color: #333;
+    }
+    #contact {
+        background-position: -350px;
+    }
+    #footer .aboutfot {
+        min-width: 100% !important;
+    }
+    #footer .navigtn {
+        min-width: 100% !important;
+        padding: 0px 20px 30px;
+        margin:20px 0px
+    }
+    .navigtn ul li {         
+        width:30%;
+        float:left;
+    }
+    #slider-home .container h1 {
+        font-size: 28px;
+    }
+    #slider-home .container p {
+        font-size: 16px;
+        width: 100%; 
+    }
+}
+
+@media(max-width:480px) {
+    #slider-home .container {
+        padding: 70px 60px 0px 50px;
+    }
+    #slider-home .container p {
+        font-size: 14px;
+        width: 100%;
+    }
+    #tophead {
+        display:none;
+    }
+    .calltoday {
+        display:none !important;
+    }
+    .logotext {
+        position:relative;
+    }
+    #menus .col-7 {
+        min-width: 40%;
+        margin: auto 0 auto auto;
+    }
+    #slider-home .container h1 {
+        font-size: 24px;
+    }
+    #slider-home {
+        height: 380px !important;
+    }
+    .logotext img {
+        width: 50px;
+    }
+    .fixed .menuli {
+        position:relative;
+        top:-1px
+    }
+    .moreinfoabout { 
+        padding: 10px 25px 15px; 
+    }
+    .detbio {
+        height: 100%;
+        position: relative;
+    }
+    #meetourtherapist .detteam .detbio .btnher a {
+        position: relative;
+        bottom: 0px;
+    }
+    body #ourservices .swiper-slide .services-details h3 {
+        font-size: 28px !important; 
+    }
+    body #ourservices .swiper-slide .services-details p {
+        font-size: 14px !important;
+        padding:0px 40px;
+    }
+    .services-details ul {
+        bottom: 0px;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    #quote { 
+        padding: 50px 30px;
+    }
+    #quote h1 {
+        font-size: 16px; 
+    }
+    #schedule .ico-list a { 
+        height: 190px; 
+    }
+    #schedule .ico-list a:nth-child(3) { 
+        width:100%;
+    }
+    #schedule .ico-list {
+        vertical-align:middle;
+    }
+}
+
+@media(max-width:460px) {
+    #slider-home .container {
+        padding: 50px 60px 0px 50px;
+    }
+    #slider-home .container h1 {
+        font-size: 22px;
+    }
+    #whymassage .rightwhy h1 {
+        font-size: 28px;
+    }
+    .rightwhy a {
+        display:block;
+        width:100%;
+        margin:20px auto;
+        text-align:center;
+    }
+    .rightwhy a svg{
+        position:relative !important;
+        float:none;
+        top:5px;
+    }
+    .ico-list  {
+        margin-top:40px
+    }
+    .ico-list a {
+        width:44%;
+        float:left !important;
+        padding:0px !important
+    }
+    #schedule { 
+        padding: 60px 0px 0px;
+        background-size: cover;
+    }
+    .detteam {
+        width:100%;
+    }
+    .detteam img{
+        width:100%;
+    }
+    #footer p {
+        font-size: 16px;
+        font-weight: 100;
+        padding-right: 0px;
+        line-height: 1.8em;
+    }
+
+}
+
+@media(max-width:400px) {
+    .ico-list a{ 
+        width:100%;
+        margin:auto !important;
+        padding:0px !important;
+    }
+}
+
+@media(max-width:360px) {
+    #slider-home .container {
+        padding: 50px 30px 0px 30px;
+    }
+    #slider-home .container h1 {
+        font-size: 17px;
+    }
+    #slider-home .container p {
+        font-size: 13px;
+        width: 100%;
+    }
+    #whymassage .rightwhy { 
+        padding: 55px 30px 50px 30px;
+    }
+    #menus .container {
+        padding:0px 0px;
+    }
+    #footer h1,
+    .divdetconts h1,
+    .titletherpst h1,
+    .detsched h2,
+    .headtits {
+        font-size:28px !important
+    }
+    .detsched {
+        word-break:break-all
+    }
+    body #footer .contst .row .col-3 {
+        max-width: 30px !important; 
+    }
+    .contst .col-9 {
+        padding-left:55px !important
+    }
+    .navigtn ul li {
+        width: 100%;
+        float: left;
+    }
+    #copyright { 
+        padding: 30px 0px;
+    }
 }
