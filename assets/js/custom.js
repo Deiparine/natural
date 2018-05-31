@@ -12,7 +12,7 @@ $('document').ready(function(){
     transitionInOverlay: 'fadeIn'
   });  
 
-  $("#neuro,#medical,#mayofas,#sports,#tissue,#bio").iziModal({
+  $("#neuro,#medical,#mayofas,#sports,#tissue,#bio,#lymp").iziModal({
     icon: 'icon-event icon-btn',
     width: "1028px", 
     history: false,
@@ -24,7 +24,7 @@ $('document').ready(function(){
     transitionInOverlay: 'fadeIn'
   });  
 
-  $("#therap1,#therap2,#therap3,#therap4,#therap5,#therap6,#therap7,#therap8,#can,#ill,#late").iziModal({
+  $("#therap1,#therap2,#therap3,#therap4,#therap5,#therap6,#therap7,#therap8,#therap9,#can,#ill,#late").iziModal({
     icon: 'icon-event icon-btn',
     width: "1028px", 
     history: false,
@@ -129,23 +129,25 @@ $('document').ready(function(){
 
     $('#slider-home').vegas({
         slides:[
-          { src: "/img/slider1.jpg" },
+          { src: "/img/slider3.jpg" },
           { src: "/img/slider2.jpg" },
-          { src: "/img/slider3.jpg" }
+          { src: "/img/slider1.jpg" }
         ],
         color: "#333",
         delay: 10000, 
+        overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/07.png',
         animation: 'random'
     }); 
 
     $('#slidegen').vegas({
         slides:[
-          { src: "/img/genslide1.jpg" },
-          { src: "/img/genslide2.jpg" },
-          { src: "/img/genslide3.jpg" }
+          { src: "/img/slider3.jpg" },
+          { src: "/img/slider1.jpg" },
+          { src: "/img/slider2.jpg" }
         ],
         color: "#333",
         delay: 10000, 
+        overlay: 'https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/overlays/07.png',
         animation: 'random'
     });
 })
