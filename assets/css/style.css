@@ -793,6 +793,10 @@ body #ourservices .swiper-slide .services-details p{
     height:100% !important;
     margin:50px 0px;
 }
+.g-recaptcha {
+    text-align:center !important;
+    display:inline-block;
+}
 @media(max-width:1024px){
     #slider-home .container h1,#whymassage .rightwhy h1{
         font-size:38px
