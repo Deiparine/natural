@@ -163,21 +163,22 @@
 }
 
 #slider-home {
-  height: 500px!important
+  height: 650px!important
 }
 
 #slider-home .container {
-  padding: 70px 430px 0 30px
+  padding: 150px 430px 0 30px;
 }
 
 #slider-home .container h1 {
   font-size: 48px;
-  background-image: linear-gradient(-75deg, #fff 50%, #7fb49e 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  -webkit-text-fill-color: #fff !important;
+  text-shadow: 0px 1px 5px black;
 }
 
 #slider-home .container p {
@@ -185,7 +186,9 @@
   width: 550px;
   color: #fff;
   font-weight: 100;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  text-shadow: 0px 1px 5px black;
+  letter-spacing: 1px;
 }
 
 #slider-home .container ul {
@@ -904,8 +907,9 @@ body #ourservices .swiper-slide .services-details p {
 }
 
 #schedule {
-  background: url(/img/sched_bg.jpg) left center no-repeat #ddd;
-  background-size: cover
+  background: #f3f3f3;
+  background-size: cover;
+  padding: 60px 0px;
 }
 
 .leftsched {
@@ -913,28 +917,31 @@ body #ourservices .swiper-slide .services-details p {
 }
 
 #map {
-  height: 100%
+  height: 450px;
+  border: solid 5px #fff;
+  -webkit-box-shadow: 0px 10px 10px -10px;
+  box-shadow: 0px 10px 10px -10px;
+}
+
+.ico-list {
+  width: 70%;
 }
 
 .rightsched {
-  padding: 60px 60px;
+  padding: 20px 50px;
   background: rgba(243, 243, 243, .52941);
 }
 
 #schedule .ico-list a {
-  display: inline-block;
-  height: 150px;
-  padding: 30px;
-  float: left;
-  margin-right: 10px;
+  padding: 20px;
   color: #2d7157;
-  font-weight: 700
+  font-weight: 700;
 }
 
 #schedule h2 {
   font-size: 48px;
   color: #2d7256;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   font-weight: 300;
   letter-spacing: 2px
 }
@@ -945,8 +952,13 @@ body #ourservices .swiper-slide .services-details p {
   margin-bottom: 20px
 }
 
+.checktherap {
+  padding: 60px 0px 0px
+}
+
 #schedule p {
-  color: #636363
+  color: #636363;
+  line-height: 2em;
 }
 
 #schedule p a {
@@ -965,7 +977,7 @@ body #ourservices .swiper-slide .services-details p {
   color: #2d7057;
   font-size: 20px;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
 }
 
 #schedule span {
@@ -997,6 +1009,31 @@ body #ourservices .swiper-slide .services-details p {
 }
 
 @media(max-width:1024px) {
+  #slider-home .container {
+    padding: 70px 430px 0 30px;
+  }
+  .rightsched {
+    padding: 50px 50px;
+  }
+  .leftsched {
+    padding: 0px 100px !important
+  }
+  .checktherap {
+    padding: 0px 0px 0px;
+  }
+  .ico-list {
+    width: 70%;
+  }
+  .ico-list .col-sm-4 {
+    width: 33% !important;
+    float: left;
+  }
+  #slider-home .container p {
+    font-size: 16px;
+  }
+
+
+
   #map {
     height: 400px;
   }
@@ -1096,12 +1133,23 @@ body #ourservices .swiper-slide .services-details p {
 }
 
 @media(max-width:768px) {
+  .leftsched {
+    padding: 0px 50px !important;
+  }
+  #slider-home .container p {
+    font-size: 15px;
+    padding-right: 150px;
+  }
+  #slider-home .container h1 {
+    font-size: 30px;
+  }
+
   #tophead .addrestop p,
   .rightemailtop a {
     font-size: 14px
   }
   #slider-home .container {
-    padding: 70px 130px 0 60px
+    padding: 70px 130px 0 30px
   }
   .leftwhy {
     display: none
@@ -1156,6 +1204,12 @@ body #ourservices .swiper-slide .services-details p {
 }
 
 @media(max-width:640px) {
+  #slider-home .container p {
+    font-size: 14px !important;
+    padding-right: 100px !important;
+  }
+
+
   .iziModal {
     z-index: 999!important;
     top: 0
@@ -1232,6 +1286,18 @@ body #ourservices .swiper-slide .services-details p {
 }
 
 @media(max-width:480px) {
+  .ico-list {
+    width: 100%;
+  }
+  .ico-list .col-sm-4 svg {
+    text-align: center !important;
+    width: 60px !important;
+  }
+  .ico-list .col-sm-4 span {
+    text-align: left !important;
+    display: block !important;
+    position: absolute;
+  }
   #map {
     height: 300px !important;
   }
@@ -1257,11 +1323,12 @@ body #ourservices .swiper-slide .services-details p {
     position: relative
   }
   #slider-home .container {
-    padding: 70px 60px 0 50px
+    padding: 40px 60px 0 50px
   }
   #slider-home .container p {
-    font-size: 14px;
-    width: 100%
+    font-size: 13px !important;
+    width: 100%;
+    padding-right: 100px !important
   }
   #tophead {
     display: none
@@ -1371,9 +1438,24 @@ body #ourservices .swiper-slide .services-details p {
     margin: auto!important;
     padding: 0!important
   }
+  #slider-home .container p {
+    font-size: 13px !important;
+    width: 100%;
+    padding-right: 0px !important;
+  }
+  body .leftsched {
+    padding: 0px 20px !important;
+  }
+  #slider-home .container h1 {
+    font-size: 22px;
+  }
 }
 
 @media(max-width:360px) {
+
+
+
+
   #slider-home .container {
     padding: 50px 30px 0
   }
