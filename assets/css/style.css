@@ -1505,4 +1505,5 @@ body #ourservices .swiper-slide .services-details p {
   background: linear-gradient(to bottom right, #194a34, #fff);
   padding: 40px;
   border-radius: 20px;
+  margin-bottom: 80px;
 }
