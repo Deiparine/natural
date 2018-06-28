@@ -1,17 +1,26 @@
-<extends src='general.html'>
+<extends src='layout.html'>
   <block name='content'>
-    <div id="slidegen" class="headergen">
-      <div class="container">
-        <div class="sildertxt text-center"><a href="/">Natural Earth Healing Center</a><span>/</span>
-          <h4 class="othrpagesttle">Thank You</h4>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center">.
+          <div class="thank-box">
+            <h1>Thank you!</h1>
+            <p>We will call you shortly to set up your session</p>
+            <a href="/" class="btn btn-success btn-lg mb-4">Home</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 offset-3">
-          hahahhaha</div>
-      </div>
-    </div>
+    <!-- <h1>{{ site.sitedata[0].sitename }}</h1>
+    <p>{{ site.sitedata[0].metadesc }}</p>
+    <br />
+    <h2>Recent Blogs:</h2>
+    <ul>
+      <each loop="post, index of _collections.posts">
+        <li>
+          <a href='{{ post._path }}'>{{ post.title }}</a>
+        </li>
+      </each>
+    </ul> -->
   </block>
 </extends>
