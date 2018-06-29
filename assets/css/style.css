@@ -1286,6 +1286,9 @@ body #ourservices .swiper-slide .services-details p {
 }
 
 @media(max-width:480px) {
+  #thanks {
+    padding: 60px 30px !important;
+  }
   .ico-list {
     width: 100%;
   }
@@ -1501,9 +1504,32 @@ body #ourservices .swiper-slide .services-details p {
   display: none;
 }
 
-.thank-box {
+#thanks {
+  background: -webkit-gradient(linear, left top, right bottom, from(#194a34), to(#fff));
   background: linear-gradient(to bottom right, #194a34, #fff);
-  padding: 40px;
-  border-radius: 20px;
-  margin-bottom: 80px;
+  padding: 140px 30px;
+}
+
+#thanks h1 {
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 4px;
+  margin: 20px;
+  display: inline-block
+}
+
+#thanks p {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+#thanks a {
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 100;
+  display: inline-block;
+  margin: 20px 0px
 }
