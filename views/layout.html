@@ -60,7 +60,19 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
       <script src="/js/smoothscroll.js"></script>
       <script src="https://forms.webriq.com/js/initForms"></script>
-      <script type="text/javascript">       
+      <script type="text/javascript">
+        $(document).ready(function(){
+
+          $('#modal-custom').iziModal('open');
+          $("#modal-custom").iziModal({
+              title: 'Trans-Siberian Orchestra',
+              headerColor: '#45a991',
+              autoOpen: 5000,
+              top: true
+          });
+
+
+          })
 
           $(function() {
             $(window).scroll(function() {
@@ -70,6 +82,7 @@
                 $('#menus').removeClass('fixed');
               }
             });
+        
           });
 
       </script> 
