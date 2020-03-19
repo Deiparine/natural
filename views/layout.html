@@ -147,18 +147,9 @@
         });
 
         /*** temporary closure notice (removed when not needed) ***/
-        $(function() {
-          var visited = localStorage.getItem('visited');
-          if (!visited) {
-            document.getElementById("closure-notice").style.display = "none";
-            localStorage.setItem('visited', true);
-          }
-        });
-
         $("#close-notice").click(function() {
           $("#closure-notice").hide();
         });
-        /*** end of temporary closure notice ***/
 
       </script>
     </block>
