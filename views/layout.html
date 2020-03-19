@@ -1,53 +1,116 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='description' content='Natural Earth Healing Center is the premier medical massage practice in Colorado Springs, CO helping clients recover from injury or other chronic & acute pain'>
-    <meta name='keywords' content='massage, healing, therapy'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'> 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Natural Earth Healing Center is the premier medical massage practice in Colorado Springs, CO helping clients recover from injury or other chronic & acute pain"
+    />
+    <meta name="keywords" content="massage, healing, therapy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:url" content="http://www.naturalearthhealingcenter.com/" />
+    <meta
+      property="og:url"
+      content="http://www.naturalearthhealingcenter.com/"
+    />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Natural Earth Healing Center" />
-    <meta property="og:description" content="Natural Earth Healing Center is the premier medical massage practice in Colorado Springs, CO helping clients recover from injury or other chronic & acute pain" />
+    <meta
+      property="og:description"
+      content="Natural Earth Healing Center is the premier medical massage practice in Colorado Springs, CO helping clients recover from injury or other chronic & acute pain"
+    />
     <meta property="og:image" content="/img/logo.png" />
 
     <meta property="og:title" content="Natural Earth Healing Center" />
     <meta property="og:image" content="/img/logo.png" />
-    <meta property="og:description" content="Natural Earth Healing Center is the premier medical massage practice in Colorado Springs, CO helping clients recover from injury or other chronic & acute pain" />
+    <meta
+      property="og:description"
+      content="Natural Earth Healing Center is the premier medical massage practice in Colorado Springs, CO helping clients recover from injury or other chronic & acute pain"
+    />
 
-
-    <block name='title'>
-      <title>Natural Earth Healing Center | Massage Therapy | Colorado Springs, CO</title>
+    <block name="title">
+      <title>
+        Natural Earth Healing Center | Massage Therapy | Colorado Springs, CO
+      </title>
     </block>
-    
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="/img/favicon2.png" type="image/gif" sizes="16x16">
-    <link href="https://fonts.googleapis.com/css?family=Cabin:700" rel="stylesheet">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/slider.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
+
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="/img/favicon2.png" type="image/gif" sizes="16x16" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.css"
+    />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"
+    />
   </head>
 
   <body>
-    <main id='{{ pageId }}'>
-      <include src='includes/modals.html'></include>
-      <include src='includes/menu.html'></include>
-      <include src='includes/header.html'></include>
-      <include src='includes/slider.html'></include>
-      <block name='content'></block>   
-      <include src='includes/footer.html'></include>
+    <div id="closure-notice" style="display: block">
+      <p class="mb-0 d-inline-block">
+        Update: Our office will be closed until 4/1/20 tentatively to commit to
+        the health and safety of our community. Check back for further updates.
+      </p>
+      <button id="close-notice" class="ml-2 d-inline-block">
+        Dismiss
+      </button>
+    </div>
+    <!--
+  <div id="closureModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-hidden="true"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Update: Our office will be closed until 4/1/20 tentatively to
+              commit to the health and safety of our community. Check back for
+              further updates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <main id="{{ pageId }}">
+      <include src="includes/modals.html"></include>
+      <include src="includes/menu.html"></include>
+      <include src="includes/header.html"></include>
+      <include src="includes/slider.html"></include>
+      <block name="content"></block>
+      <include src="includes/footer.html"></include>
     </main>
 
-    <block name='javascript'>
+    <block name="javascript">
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.0/vegas.min.js"></script>
       <script src="/js/bootstrap.min.js"></script>
@@ -71,21 +134,33 @@
         //       top: true
         //   });
 
-
         //   })
 
-          $(function() {
-            $(window).scroll(function() {
-              if ($(this).scrollTop() > 63) /* .header-top height */ {
-                $('#menus').addClass('fixed');
-              } else {
-                $('#menus').removeClass('fixed');
-              }
-            });
-        
+        $(function() {
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > 63) {
+              /* .header-top height */ $("#menus").addClass("fixed");
+            } else {
+              $("#menus").removeClass("fixed");
+            }
           });
+        });
 
-      </script> 
+        /*** temporary closure notice (removed when not needed) ***/
+        $(function() {
+          var visited = localStorage.getItem('visited');
+          if (!visited) {
+            document.getElementById("closure-notice").style.display = "none";
+            localStorage.setItem('visited', true);
+          }
+        });
+
+        $("#close-notice").click(function() {
+          $("#closure-notice").hide();
+        });
+        /*** end of temporary closure notice ***/
+
+      </script>
     </block>
   </body>
 </html>
