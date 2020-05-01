@@ -1563,3 +1563,25 @@ button#close-notice {
   font-size: 12px;
   outline: none !important;
 }
+
+.blinking {
+  animation: blinkingText 1.2s infinite;
+  font-weight: 900;
+}
+@keyframes blinkingText {
+  0% {
+    color: #fff;
+  }
+  49% {
+    color: #fff;
+  }
+  60% {
+    color: #eff7e8;
+  }
+  99% {
+    color: #eff7e8;
+  }
+  100% {
+    color: #fff;
+  }
+}
