@@ -22,7 +22,7 @@ $("document").ready(function() {
       transitionInOverlay: "fadeIn"
     }),
     $(
-      "#therap1,#therap2,#therap3,#therap4,#therap5,#therap6,#therap7,#therap8,#therap9,#therap10,#therap11,#therap12,#can,#ill,#late"
+      "#therap1,#therap2,#therap3,#therap4,#therap5,#therap6,#therap7,#therap8,#therap9,#therap10,#can,#ill,#late"
     ).iziModal({
       icon: "icon-event icon-btn",
       width: "1028px",
